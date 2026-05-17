@@ -1,0 +1,433 @@
+Initialized native services in: /Users/idong-u/.gradle/native
+Initialized jansi services in: /Users/idong-u/.gradle/native
+The client will now receive all logging from the daemon (pid: 59892). The daemon log file: /Users/idong-u/.gradle/daemon/9.4.1/daemon-59892.out.log
+Starting 3rd build in daemon [uptime: 2 mins 36.208 secs, performance: 100%, GC rate: 0.00/s, heap usage: 4% of 512 MiB, non-heap usage: 19% of 384 MiB]
+Using 10 worker leases.
+Operational build model parameters: {cachingModelBuilding=false, configurationCache=false, configurationCacheDisabledReason=null, configurationCacheParallelLoad=false, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=false, resilientModelBuilding=false}
+Now considering [/Users/idong-u/d/seat-lock-alternatives] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/Users/idong-u/d/seat-lock-alternatives/settings.gradle'.
+Projects loaded. Root project using build file '/Users/idong-u/d/seat-lock-alternatives/build.gradle'.
+Included projects: [root project 'seat-lock-alternatives', project ':alt-a-partial-unique', project ':alt-b-optimistic-lock', project ':alt-c-insert-on-conflict', project ':alt-d-redis-setnx', project ':alt-e-skip-locked', project ':alt-f-single-writer-queue', project ':alt-z-baseline', project ':stress-baseline', project ':stress-baseline-deep']
+
+> Configure project :
+Evaluating root project 'seat-lock-alternatives' using build file '/Users/idong-u/d/seat-lock-alternatives/build.gradle'.
+Resolved plugin [id: 'org.springframework.boot', version: '4.0.0', apply: false]
+Resolved plugin [id: 'io.spring.dependency-management', version: '1.1.7', apply: false]
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'apiElements' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'archives' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'bootArchives' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'compileOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'default' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'implementation' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testImplementation' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'apiElements' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'archives' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'bootArchives' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'compileOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'default' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'implementation' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testImplementation' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'apiElements' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'archives' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'bootArchives' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'compileOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'default' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'implementation' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testImplementation' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'apiElements' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'archives' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'bootArchives' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'compileOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'default' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'implementation' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testImplementation' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'apiElements' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'archives' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'bootArchives' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'compileOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'default' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'implementation' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testImplementation' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'apiElements' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'archives' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'bootArchives' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'compileOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'default' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'implementation' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testImplementation' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-z-baseline'
+Applying dependency management to configuration 'apiElements' in project 'alt-z-baseline'
+Applying dependency management to configuration 'archives' in project 'alt-z-baseline'
+Applying dependency management to configuration 'bootArchives' in project 'alt-z-baseline'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'compileOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'default' in project 'alt-z-baseline'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'implementation' in project 'alt-z-baseline'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-z-baseline'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-z-baseline'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testImplementation' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'annotationProcessor' in project 'stress-baseline'
+Applying dependency management to configuration 'apiElements' in project 'stress-baseline'
+Applying dependency management to configuration 'archives' in project 'stress-baseline'
+Applying dependency management to configuration 'bootArchives' in project 'stress-baseline'
+Applying dependency management to configuration 'compileClasspath' in project 'stress-baseline'
+Applying dependency management to configuration 'compileOnly' in project 'stress-baseline'
+Applying dependency management to configuration 'default' in project 'stress-baseline'
+Applying dependency management to configuration 'developmentOnly' in project 'stress-baseline'
+Applying dependency management to configuration 'implementation' in project 'stress-baseline'
+Applying dependency management to configuration 'mainSourceElements' in project 'stress-baseline'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'stress-baseline'
+Applying dependency management to configuration 'runtimeClasspath' in project 'stress-baseline'
+Applying dependency management to configuration 'runtimeElements' in project 'stress-baseline'
+Applying dependency management to configuration 'runtimeOnly' in project 'stress-baseline'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'stress-baseline'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'stress-baseline'
+Applying dependency management to configuration 'testCompileClasspath' in project 'stress-baseline'
+Applying dependency management to configuration 'testCompileOnly' in project 'stress-baseline'
+Applying dependency management to configuration 'testImplementation' in project 'stress-baseline'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'stress-baseline'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'stress-baseline'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'stress-baseline'
+Applying dependency management to configuration 'annotationProcessor' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'apiElements' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'archives' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'bootArchives' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'compileClasspath' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'compileOnly' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'default' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'developmentOnly' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'implementation' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'mainSourceElements' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'runtimeClasspath' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'runtimeElements' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'runtimeOnly' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testCompileClasspath' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testCompileOnly' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testImplementation' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'stress-baseline-deep'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'stress-baseline-deep'
+
+> Configure project :alt-a-partial-unique
+Evaluating project ':alt-a-partial-unique' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique/build.gradle'.
+
+> Configure project :alt-b-optimistic-lock
+Evaluating project ':alt-b-optimistic-lock' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-b-optimistic-lock/build.gradle'.
+
+> Configure project :alt-c-insert-on-conflict
+Evaluating project ':alt-c-insert-on-conflict' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-c-insert-on-conflict/build.gradle'.
+
+> Configure project :alt-d-redis-setnx
+Evaluating project ':alt-d-redis-setnx' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-d-redis-setnx/build.gradle'.
+
+> Configure project :alt-e-skip-locked
+Evaluating project ':alt-e-skip-locked' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-e-skip-locked/build.gradle'.
+
+> Configure project :alt-f-single-writer-queue
+Evaluating project ':alt-f-single-writer-queue' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue/build.gradle'.
+
+> Configure project :alt-z-baseline
+Evaluating project ':alt-z-baseline' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-z-baseline/build.gradle'.
+
+> Configure project :stress-baseline
+Evaluating project ':stress-baseline' using build file '/Users/idong-u/d/seat-lock-alternatives/stress-baseline/build.gradle'.
+
+> Configure project :stress-baseline-deep
+Evaluating project ':stress-baseline-deep' using build file '/Users/idong-u/d/seat-lock-alternatives/stress-baseline-deep/build.gradle'.
+All projects evaluated.
+Task path ':alt-f-single-writer-queue:test' matched project ':alt-f-single-writer-queue'
+Task name matched 'test'
+Selected primary task 'test' from project :alt-f-single-writer-queue
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/idong-u/.gradle/daemon/9.4.1 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Resolving global dependency management for project 'alt-f-single-writer-queue'
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Tasks to be executed: [task ':alt-f-single-writer-queue:compileJava', task ':alt-f-single-writer-queue:processResources', task ':alt-f-single-writer-queue:classes', task ':alt-f-single-writer-queue:compileTestJava', task ':alt-f-single-writer-queue:processTestResources', task ':alt-f-single-writer-queue:testClasses', task ':alt-f-single-writer-queue:test']
+Tasks that were excluded: []
+Resolve mutations for :alt-f-single-writer-queue:compileJava (Thread[#225,Execution worker,5,main]) started.
+:alt-f-single-writer-queue:compileJava (Thread[#225,Execution worker,5,main]) started.
+
+> Task :alt-f-single-writer-queue:compileJava UP-TO-DATE
+Custom actions are attached to task ':alt-f-single-writer-queue:compileJava'.
+Caching disabled for task ':alt-f-single-writer-queue:compileJava' because:
+  Build cache is disabled
+Skipping task ':alt-f-single-writer-queue:compileJava' as it is up-to-date.
+Resolve mutations for :alt-f-single-writer-queue:processResources (Thread[#225,Execution worker,5,main]) started.
+:alt-f-single-writer-queue:processResources (Thread[#225,Execution worker,5,main]) started.
+
+> Task :alt-f-single-writer-queue:processResources UP-TO-DATE
+Caching disabled for task ':alt-f-single-writer-queue:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':alt-f-single-writer-queue:processResources' as it is up-to-date.
+Resolve mutations for :alt-f-single-writer-queue:classes (Thread[#225,Execution worker,5,main]) started.
+:alt-f-single-writer-queue:classes (Thread[#225,Execution worker,5,main]) started.
+
+> Task :alt-f-single-writer-queue:classes UP-TO-DATE
+Skipping task ':alt-f-single-writer-queue:classes' as it has no actions.
+Resolve mutations for :alt-f-single-writer-queue:compileTestJava (Thread[#225,Execution worker,5,main]) started.
+:alt-f-single-writer-queue:compileTestJava (Thread[#225,Execution worker,5,main]) started.
+
+> Task :alt-f-single-writer-queue:compileTestJava
+Custom actions are attached to task ':alt-f-single-writer-queue:compileTestJava'.
+Caching disabled for task ':alt-f-single-writer-queue:compileTestJava' because:
+  Build cache is disabled
+Task ':alt-f-single-writer-queue:compileTestJava' is not up-to-date because:
+  Input property 'stableSources' file /Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue/src/test/java/com/dongwoo/altf/AltFThroughputTest.java has changed.
+Compilation mode: default, forking compiler
+Created classpath snapshot for incremental compilation in 0.014 secs.
+Compiling with toolchain '/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home'.
+Compiling with JDK Java compiler API.
+Incremental compilation of 1 classes completed in 0.323 secs.
+Class dependency analysis for incremental compilation took 0.001 secs.
+Resolve mutations for :alt-f-single-writer-queue:processTestResources (Thread[#225,Execution worker,5,main]) started.
+:alt-f-single-writer-queue:processTestResources (Thread[#225,Execution worker,5,main]) started.
+
+> Task :alt-f-single-writer-queue:processTestResources NO-SOURCE
+Skipping task ':alt-f-single-writer-queue:processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :alt-f-single-writer-queue:testClasses (Thread[#225,Execution worker,5,main]) started.
+:alt-f-single-writer-queue:testClasses (Thread[#225,Execution worker,5,main]) started.
+
+> Task :alt-f-single-writer-queue:testClasses
+Skipping task ':alt-f-single-writer-queue:testClasses' as it has no actions.
+Resolve mutations for :alt-f-single-writer-queue:test (Thread[#225,Execution worker,5,main]) started.
+:alt-f-single-writer-queue:test (Thread[#225,Execution worker,5,main]) started.
+Gradle Test Executor 4 started executing tests.
+
+> Task :alt-f-single-writer-queue:test
+Caching disabled for task ':alt-f-single-writer-queue:test' because:
+  Build cache is disabled
+Task ':alt-f-single-writer-queue:test' is not up-to-date because:
+  Task has failed previously.
+Starting process 'Gradle Test Executor 4'. Working directory: /Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue Command: /Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home/bin/java -Dapi.version=1.43 -Dorg.gradle.internal.worker.tmpdir=/Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue/build/tmp/test/work @/Users/idong-u/.gradle/.tmp/gradle-worker-classpath3487473545395133106txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=KR -Duser.language=ko -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 4'
+Successfully started process 'Gradle Test Executor 4'
+
+AltFThroughputTest STANDARD_OUT
+    23:53:05.908 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.dongwoo.altf.AltFThroughputTest]: AltFThroughputTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    23:53:05.957 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.dongwoo.altf.AltFApplication for test class com.dongwoo.altf.AltFThroughputTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+
+     :: Spring Boot ::                (v4.0.0)
+
+    2026-05-17T23:53:06.133+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] com.dongwoo.altf.AltFThroughputTest      : Starting AltFThroughputTest using Java 25.0.1 with PID 61237 (started by idong-u in /Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue)
+    2026-05-17T23:53:06.133+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] com.dongwoo.altf.AltFThroughputTest      : No active profile set, falling back to 1 default profile: "default"
+    2026-05-17T23:53:06.320+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-05-17T23:53:06.345+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+    2026-05-17T23:53:06.450+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+    2026-05-17T23:53:06.451+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+    2026-05-17T23:53:06.459+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 2.0.2
+    2026-05-17T23:53:06.578+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+    2026-05-17T23:53:06.772+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:///Users/idong-u/.docker/run/docker.sock
+    2026-05-17T23:53:06.773+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+    2026-05-17T23:53:06.791+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+      Server Version: 24.0.5
+      API Version: 1.43
+      Operating System: Docker Desktop
+      Total Memory: 7851 MB
+    2026-05-17T23:53:06.792+09:00  WARN 61237 --- [alt-f-single-writer-queue] [    Test worker] o.testcontainers.utility.ResourceReaper  : 
+    ********************************************************************************
+    Ryuk has been disabled. This can cause unexpected behavior in your environment.
+    ********************************************************************************
+    2026-05-17T23:53:06.793+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+    2026-05-17T23:53:06.793+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+    2026-05-17T23:53:06.803+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] tc.postgres:16                           : Creating container for image: postgres:16
+    2026-05-17T23:53:07.209+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] tc.postgres:16                           : Container postgres:16 is starting: f30f901949810fdc56219d3dcb0fb855af8a605acdf374a71c2ef7a70168c424
+    2026-05-17T23:53:08.249+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] tc.postgres:16                           : Container postgres:16 started in PT1.445373S
+    2026-05-17T23:53:08.249+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] tc.postgres:16                           : Container is started (JDBC URL: jdbc:postgresql://localhost:52066/test?loggerLevel=OFF)
+    2026-05-17T23:53:08.514+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:52066/test?loggerLevel=OFF (PostgreSQL 16.14)
+    2026-05-17T23:53:08.536+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+    2026-05-17T23:53:08.538+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.008s)
+    2026-05-17T23:53:08.547+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+    2026-05-17T23:53:08.594+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+    2026-05-17T23:53:08.598+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init"
+    2026-05-17T23:53:08.613+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.006s)
+    2026-05-17T23:53:08.654+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-05-17T23:53:08.679+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+    2026-05-17T23:53:08.864+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2026-05-17T23:53:08.878+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2026-05-17T23:53:08.905+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b888692
+    2026-05-17T23:53:08.906+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2026-05-17T23:53:08.951+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+    	Database JDBC URL [jdbc:postgresql://localhost:52066/test?loggerLevel=OFF]
+    	Database driver: PostgreSQL JDBC Driver
+    	Database dialect: PostgreSQLDialect
+    	Database version: 16.14
+    	Default catalog/schema: test/public
+    	Autocommit mode: undefined/unknown
+    	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+    	JDBC fetch size: none
+    	Pool: DatasourceConnectionProviderImpl
+    	Minimum pool size: undefined/unknown
+    	Maximum pool size: undefined/unknown
+    2026-05-17T23:53:09.358+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2026-05-17T23:53:09.360+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+    2026-05-17T23:53:09.389+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-05-17T23:53:09.425+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+    2026-05-17T23:53:09.477+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] c.d.a.q.SingleWriterReservationQueue     : single-writer worker started
+    2026-05-17T23:53:09.512+09:00  INFO 61237 --- [alt-f-single-writer-queue] [    Test worker] com.dongwoo.altf.AltFThroughputTest      : Started AltFThroughputTest in 3.502 seconds (process running for 4.053)
+
+AltFThroughputTest > 1000 좌석 × 1000 스레드 → 직렬 worker 처리량 측정 STANDARD_ERROR
+    Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+    WARNING: A Java agent has been loaded dynamically (/Users/idong-u/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+    WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+    WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+    WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :alt-f-single-writer-queue:test
+
+AltFThroughputTest > 1000 좌석 × 1000 스레드 → 직렬 worker 처리량 측정 SKIPPED
+Generating HTML test report...
+Finished generating test html results (0.041 secs) into: /Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue/build/reports/tests/test
+Finished generating test XML results (0.007 secs) into: /Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue/build/test-results/test
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/9.4.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/9.4.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/9.4.1/executionHistory/executionHistory.bin
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/buildOutputCleanup/outputFiles.bin
+
+> Task :alt-f-single-writer-queue:test FAILED
+
+[Incubating] Problems report is available at: file:///Users/idong-u/d/seat-lock-alternatives/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':alt-f-single-writer-queue:test'.
+> Test process encountered an unexpected problem.
+   > Process 'Gradle Test Executor 4' finished with non-zero exit value 137 (this value may indicate that the process was terminated with the SIGKILL signal, which is often caused by the system running out of memory)
+
+* Try:
+> Check common problems https://docs.gradle.org/9.4.1/userguide/java_testing.html#sec:java_testing_troubleshooting.
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1h 53m 4s
+4 actionable tasks: 2 executed, 2 up-to-date
+Watched directory hierarchies: [/Users/idong-u/d/seat-lock-alternatives]

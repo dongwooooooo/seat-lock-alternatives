@@ -1,0 +1,89 @@
+> Task :stress-baseline:compileJava UP-TO-DATE
+> Task :stress-baseline:processResources UP-TO-DATE
+> Task :stress-baseline:classes UP-TO-DATE
+> Task :stress-baseline:compileTestJava
+> Task :stress-baseline:processTestResources NO-SOURCE
+> Task :stress-baseline:testClasses
+
+> Task :stress-baseline:test
+
+DistributedSeatStressTest STANDARD_OUT
+    23:47:35.116 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.dongwoo.stressbaseline.DistributedSeatStressTest]: DistributedSeatStressTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    23:47:35.192 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.dongwoo.stressbaseline.StressBaselineApplication for test class com.dongwoo.stressbaseline.DistributedSeatStressTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+
+     :: Spring Boot ::                (v4.0.0)
+
+    2026-05-17T23:47:35.397+09:00  INFO 58478 --- [stress-baseline] [    Test worker] c.d.s.DistributedSeatStressTest          : Starting DistributedSeatStressTest using Java 25.0.1 with PID 58478 (started by idong-u in /Users/idong-u/d/seat-lock-alternatives/stress-baseline)
+    2026-05-17T23:47:35.397+09:00  INFO 58478 --- [stress-baseline] [    Test worker] c.d.s.DistributedSeatStressTest          : No active profile set, falling back to 1 default profile: "default"
+    2026-05-17T23:47:35.602+09:00  INFO 58478 --- [stress-baseline] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-05-17T23:47:35.633+09:00  INFO 58478 --- [stress-baseline] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+    2026-05-17T23:47:35.742+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+    2026-05-17T23:47:35.743+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+    2026-05-17T23:47:35.751+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 2.0.2
+    2026-05-17T23:47:35.882+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+    2026-05-17T23:47:36.101+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:///Users/idong-u/.docker/run/docker.sock
+    2026-05-17T23:47:36.101+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+    2026-05-17T23:47:36.122+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+      Server Version: 24.0.5
+      API Version: 1.43
+      Operating System: Docker Desktop
+      Total Memory: 7851 MB
+    2026-05-17T23:47:36.123+09:00  WARN 58478 --- [stress-baseline] [    Test worker] o.testcontainers.utility.ResourceReaper  : 
+    ********************************************************************************
+    Ryuk has been disabled. This can cause unexpected behavior in your environment.
+    ********************************************************************************
+    2026-05-17T23:47:36.125+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+    2026-05-17T23:47:36.126+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+    2026-05-17T23:47:36.136+09:00  INFO 58478 --- [stress-baseline] [    Test worker] tc.postgres:16                           : Creating container for image: postgres:16
+    2026-05-17T23:47:36.579+09:00  INFO 58478 --- [stress-baseline] [    Test worker] tc.postgres:16                           : Container postgres:16 is starting: d6aa5ff73becdaeb8d381af29db8dcfd8763c6c59c862d0da5dbdadd3fc3628b
+    2026-05-17T23:47:37.763+09:00  INFO 58478 --- [stress-baseline] [    Test worker] tc.postgres:16                           : Container postgres:16 started in PT1.62682S
+    2026-05-17T23:47:37.764+09:00  INFO 58478 --- [stress-baseline] [    Test worker] tc.postgres:16                           : Container is started (JDBC URL: jdbc:postgresql://localhost:51092/test?loggerLevel=OFF)
+    2026-05-17T23:47:38.063+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:51092/test?loggerLevel=OFF (PostgreSQL 16.14)
+    2026-05-17T23:47:38.090+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+    2026-05-17T23:47:38.093+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
+    2026-05-17T23:47:38.104+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+    2026-05-17T23:47:38.150+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+    2026-05-17T23:47:38.155+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init"
+    2026-05-17T23:47:38.164+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.f.c.i.s.DefaultSqlScriptExecutor       : +--------+
+    | setval |
+    +--------+
+    | 1000   |
+    +--------+
+
+    2026-05-17T23:47:38.174+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.011s)
+    2026-05-17T23:47:38.217+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-05-17T23:47:38.247+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+    2026-05-17T23:47:38.455+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2026-05-17T23:47:38.542+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+    	Database JDBC URL [jdbc:postgresql://localhost:51092/test?loggerLevel=OFF]
+    	Database driver: PostgreSQL JDBC Driver
+    	Database dialect: PostgreSQLDialect
+    	Database version: 16.14
+    	Default catalog/schema: test/public
+    	Autocommit mode: undefined/unknown
+    	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+    	JDBC fetch size: none
+    	Pool: DatasourceConnectionProviderImpl
+    	Minimum pool size: undefined/unknown
+    	Maximum pool size: undefined/unknown
+    2026-05-17T23:47:38.936+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2026-05-17T23:47:38.937+09:00  INFO 58478 --- [stress-baseline] [    Test worker] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+    2026-05-17T23:47:38.969+09:00  INFO 58478 --- [stress-baseline] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-05-17T23:47:39.008+09:00  INFO 58478 --- [stress-baseline] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+    2026-05-17T23:47:39.371+09:00  INFO 58478 --- [stress-baseline] [    Test worker] c.d.s.DistributedSeatStressTest          : Started DistributedSeatStressTest in 4.113 seconds (process running for 4.713)
+
+DistributedSeatStressTest > Distributed 1000 좌석 x 2000 동시 — pool=10 한계로 throughput plateau STANDARD_ERROR
+    Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+    WARNING: A Java agent has been loaded dynamically (/Users/idong-u/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+    WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+    WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+    WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended

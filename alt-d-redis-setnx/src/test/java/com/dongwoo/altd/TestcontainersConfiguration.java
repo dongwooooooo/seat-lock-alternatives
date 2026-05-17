@@ -1,0 +1,21 @@
+package com.dongwoo.altd;
+
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
+import org.springframework.context.annotation.Bean;
+import org.testcontainers.postgresql.PostgreSQLContainer;
+import org.testcontainers.utility.DockerImageName;
+
+/**
+ * PostgreSQL은 Spring Boot의 @ServiceConnection 으로 자동 wiring.
+ * Redis 컨테이너는 AltDConcurrencyTest의 static block + @DynamicPropertySource로 별도 처리.
+ */
+@TestConfiguration(proxyBeanMethods = false)
+public class TestcontainersConfiguration {
+
+    @Bean
+    @ServiceConnection
+    PostgreSQLContainer postgresContainer() {
+        return new PostgreSQLContainer(DockerImageName.parse("postgres:16"));
+    }
+}

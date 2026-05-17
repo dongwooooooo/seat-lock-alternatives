@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: alt-e-skip-locked
+  datasource:
+    hikari:
+      maximum-pool-size: 120
+      connection-timeout: 10000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc.batch_size: 50
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+logging:
+  level:
+    com.dongwoo.alte: info
+    org.hibernate.SQL: warn

@@ -1,0 +1,4 @@
+// 대안 E — SELECT FOR UPDATE SKIP LOCKED.
+// 루트 build.gradle의 공통 dependencies 사용.
+bootJar { enabled = true }
+jar { enabled = false }

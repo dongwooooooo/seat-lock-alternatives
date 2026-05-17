@@ -1,0 +1,505 @@
+Initialized native services in: /Users/idong-u/.gradle/native
+Initialized jansi services in: /Users/idong-u/.gradle/native
+The client will now receive all logging from the daemon (pid: 56558). The daemon log file: /Users/idong-u/.gradle/daemon/9.4.1/daemon-56558.out.log
+Starting 4th build in daemon [uptime: 37.608 secs, performance: 97%, GC rate: 0.00/s, heap usage: 4% of 512 MiB, non-heap usage: 13% of 384 MiB]
+Using 10 worker leases.
+Operational build model parameters: {cachingModelBuilding=false, configurationCache=false, configurationCacheDisabledReason=null, configurationCacheParallelLoad=false, configurationCacheParallelStore=false, configureOnDemand=false, invalidateCoupledProjects=false, isolatedProjects=false, modelAsProjectDependency=false, modelBuilding=false, parallelModelBuilding=false, parallelProjectConfiguration=false, parallelProjectExecution=false, resilientModelBuilding=false}
+Now considering [/Users/idong-u/d/seat-lock-alternatives] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/Users/idong-u/d/seat-lock-alternatives/settings.gradle'.
+Projects loaded. Root project using build file '/Users/idong-u/d/seat-lock-alternatives/build.gradle'.
+Included projects: [root project 'seat-lock-alternatives', project ':alt-a-partial-unique', project ':alt-b-optimistic-lock', project ':alt-c-insert-on-conflict', project ':alt-d-redis-setnx', project ':alt-e-skip-locked', project ':alt-f-single-writer-queue', project ':alt-z-baseline']
+
+> Configure project :
+Evaluating root project 'seat-lock-alternatives' using build file '/Users/idong-u/d/seat-lock-alternatives/build.gradle'.
+Caching disabled for Groovy DSL script compilation (cp_proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/idong-u/d/seat-lock-alternatives/build.gradle' using SubsetScriptTransformer.
+Resolved plugin [id: 'org.springframework.boot', version: '4.0.0', apply: false]
+Resolved plugin [id: 'io.spring.dependency-management', version: '1.1.7', apply: false]
+Caching disabled for Groovy DSL script compilation (proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/idong-u/d/seat-lock-alternatives/build.gradle' using BuildScriptTransformer.
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'apiElements' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'archives' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'bootArchives' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'compileOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'default' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'implementation' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testImplementation' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-a-partial-unique'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'apiElements' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'archives' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'bootArchives' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'compileOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'default' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'implementation' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testImplementation' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-b-optimistic-lock'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'apiElements' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'archives' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'bootArchives' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'compileOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'default' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'implementation' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testImplementation' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-c-insert-on-conflict'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'apiElements' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'archives' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'bootArchives' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'compileOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'default' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'implementation' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testImplementation' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-d-redis-setnx'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'apiElements' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'archives' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'bootArchives' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'compileOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'default' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'implementation' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testImplementation' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-e-skip-locked'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'apiElements' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'archives' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'bootArchives' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'compileOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'default' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'implementation' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testImplementation' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-f-single-writer-queue'
+Applying dependency management to configuration 'annotationProcessor' in project 'alt-z-baseline'
+Applying dependency management to configuration 'apiElements' in project 'alt-z-baseline'
+Applying dependency management to configuration 'archives' in project 'alt-z-baseline'
+Applying dependency management to configuration 'bootArchives' in project 'alt-z-baseline'
+Applying dependency management to configuration 'compileClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'compileOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'default' in project 'alt-z-baseline'
+Applying dependency management to configuration 'developmentOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'implementation' in project 'alt-z-baseline'
+Applying dependency management to configuration 'mainSourceElements' in project 'alt-z-baseline'
+Applying dependency management to configuration 'productionRuntimeClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'runtimeClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'runtimeElements' in project 'alt-z-baseline'
+Applying dependency management to configuration 'runtimeOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testAndDevelopmentOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testCompileClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testCompileOnly' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testImplementation' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testResultsElementsForTest' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'alt-z-baseline'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'alt-z-baseline'
+
+> Configure project :alt-a-partial-unique
+Evaluating project ':alt-a-partial-unique' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique/build.gradle'.
+Caching disabled for Groovy DSL script compilation (cp_proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique/build.gradle' using SubsetScriptTransformer.
+Caching disabled for Groovy DSL script compilation (proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique/build.gradle' using BuildScriptTransformer.
+
+> Configure project :alt-b-optimistic-lock
+Evaluating project ':alt-b-optimistic-lock' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-b-optimistic-lock/build.gradle'.
+
+> Configure project :alt-c-insert-on-conflict
+Evaluating project ':alt-c-insert-on-conflict' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-c-insert-on-conflict/build.gradle'.
+Caching disabled for Groovy DSL script compilation (cp_proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/idong-u/d/seat-lock-alternatives/alt-c-insert-on-conflict/build.gradle' using SubsetScriptTransformer.
+Caching disabled for Groovy DSL script compilation (proj) because:
+  Build cache is disabled
+  Not worth caching.
+Compiling build file '/Users/idong-u/d/seat-lock-alternatives/alt-c-insert-on-conflict/build.gradle' using BuildScriptTransformer.
+
+> Configure project :alt-d-redis-setnx
+Evaluating project ':alt-d-redis-setnx' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-d-redis-setnx/build.gradle'.
+
+> Configure project :alt-e-skip-locked
+Evaluating project ':alt-e-skip-locked' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-e-skip-locked/build.gradle'.
+
+> Configure project :alt-f-single-writer-queue
+Evaluating project ':alt-f-single-writer-queue' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-f-single-writer-queue/build.gradle'.
+
+> Configure project :alt-z-baseline
+Evaluating project ':alt-z-baseline' using build file '/Users/idong-u/d/seat-lock-alternatives/alt-z-baseline/build.gradle'.
+All projects evaluated.
+Task path ':alt-a-partial-unique:test' matched project ':alt-a-partial-unique'
+Task name matched 'test'
+Selected primary task 'test' from project :alt-a-partial-unique
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/idong-u/.gradle/daemon/9.4.1 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.7/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm2638483597246359936probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.7/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.7/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.7/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.7/Contents/Home, JAVA_VERSION=21.0.7, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.7+6-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.7+6-LTS, VM_VENDOR=Amazon.com Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm239710891640011097probe Command: /Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home': {JAVA_HOME=/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home, JAVA_VERSION=25.0.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=25.0.1+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=25.0.1+8-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm4410677942729659331probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home, JAVA_VERSION=21.0.4, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.4+7-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.4+7-LTS, VM_VENDOR=Amazon.com Inc., OS_ARCH=aarch64}
+Starting process 'command '/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm3489721689804178625probe Command: /Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/java''
+Received JVM installation metadata from '/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home': {JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home, JAVA_VERSION=11.0.20, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Starting process 'command '/Library/Java/JavaVirtualMachines/amazon-corretto-25.jdk/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm14699584201102422457probe Command: /Library/Java/JavaVirtualMachines/amazon-corretto-25.jdk/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Library/Java/JavaVirtualMachines/amazon-corretto-25.jdk/Contents/Home/bin/java''
+Received JVM installation metadata from '/Library/Java/JavaVirtualMachines/amazon-corretto-25.jdk/Contents/Home': {JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-25.jdk/Contents/Home, JAVA_VERSION=25.0.2, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=25.0.2+10-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=25.0.2+10-LTS, VM_VENDOR=Amazon.com Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm8610172414789597264probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home, JAVA_VERSION=21.0.5, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.5+11-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.5+11-LTS, VM_VENDOR=Amazon.com Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm5492696165944641491probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.1/Contents/Home, JAVA_VERSION=24.0.1, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=24.0.1+9-30, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=24.0.1+9-30, VM_VENDOR=Oracle Corporation, OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm2517254880443668523probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home, JAVA_VERSION=19.0.2, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=19.0.2+7-FR, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=19.0.2+7-FR, VM_VENDOR=Amazon.com Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-1.8.0_462/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm46624179500214666probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/corretto-1.8.0_462/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-1.8.0_462/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-1.8.0_462/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/corretto-1.8.0_462/Contents/Home/jre, JAVA_VERSION=1.8.0_462, JAVA_VENDOR=Amazon.com Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=1.8.0_462-b08, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=25.462-b08, VM_VENDOR=Amazon.com Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.2+12-54/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm3622593554847112127probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.2+12-54/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.2+12-54/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.2+12-54/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/openjdk-24.0.2+12-54/Contents/Home, JAVA_VERSION=24.0.2, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=24.0.2+12-54, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=24.0.2+12-54, VM_VENDOR=Oracle Corporation, OS_ARCH=aarch64}
+Starting process 'command '/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm12522822318628297791probe Command: /Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/bin/java''
+Received JVM installation metadata from '/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home': {JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home, JAVA_VERSION=20.0.2, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=20.0.2+9-78, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=20.0.2+9-78, VM_VENDOR=Oracle Corporation, OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8.1/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm15488151128529160299probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8.1/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8.1/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8.1/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8.1/Contents/Home, JAVA_VERSION=17.0.8.1, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.8.1+1-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.8.1+1-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-21.0.7/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm1048528302435663177probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/azul-21.0.7/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-21.0.7/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-21.0.7/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/azul-21.0.7/Contents/Home, JAVA_VERSION=21.0.7, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.7+6-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.7+6-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.9/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm17110118411368079110probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.9/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.9/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.9/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.9/Contents/Home, JAVA_VERSION=17.0.9, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.9+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.9+8-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Starting process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8/Contents/Home/bin/java''. Working directory: /Users/idong-u/.gradle/.tmp/tmp-jvm16771579537530628158probe Command: /Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8/Contents/Home/bin/java''
+Received JVM installation metadata from '/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8/Contents/Home': {JAVA_HOME=/Users/idong-u/Library/Java/JavaVirtualMachines/azul-17.0.8/Contents/Home, JAVA_VERSION=17.0.8, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.8+7-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.8+7-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=aarch64}
+Resolving global dependency management for project 'alt-a-partial-unique'
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Excluding []
+Tasks to be executed: [task ':alt-a-partial-unique:compileJava', task ':alt-a-partial-unique:processResources', task ':alt-a-partial-unique:classes', task ':alt-a-partial-unique:compileTestJava', task ':alt-a-partial-unique:processTestResources', task ':alt-a-partial-unique:testClasses', task ':alt-a-partial-unique:test']
+Tasks that were excluded: []
+Resolve mutations for :alt-a-partial-unique:compileJava (Thread[#139,Execution worker,5,main]) started.
+:alt-a-partial-unique:compileJava (Thread[#139,Execution worker,5,main]) started.
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+
+> Task :alt-a-partial-unique:compileJava
+Custom actions are attached to task ':alt-a-partial-unique:compileJava'.
+Caching disabled for task ':alt-a-partial-unique:compileJava' because:
+  Build cache is disabled
+Task ':alt-a-partial-unique:compileJava' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':alt-a-partial-unique:compileJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home'.
+Starting process 'Gradle Worker Daemon 1'. Working directory: /Users/idong-u/.gradle/workers Command: /Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home/bin/java --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED @/Users/idong-u/.gradle/.tmp/gradle-worker-classpath14017586270529989725txt --enable-native-access=ALL-UNNAMED -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=KR -Duser.language=ko -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 1'
+Successfully started process 'Gradle Worker Daemon 1'
+Started Gradle worker daemon (0.285 secs) with fork options DaemonForkOptions{executable=/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home/bin/java, minHeapSize=null, maxHeapSize=null, jvmArgs=[--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED], keepAliveMode=DAEMON}.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.018 secs.
+Created classpath snapshot for incremental compilation in 0.086 secs.
+Resolve mutations for :alt-a-partial-unique:processResources (Thread[#139,Execution worker,5,main]) started.
+:alt-a-partial-unique:processResources (Thread[#139,Execution worker,5,main]) started.
+
+> Task :alt-a-partial-unique:processResources
+Caching disabled for task ':alt-a-partial-unique:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Task ':alt-a-partial-unique:processResources' is not up-to-date because:
+  No history is available.
+Resolve mutations for :alt-a-partial-unique:classes (Thread[#139,Execution worker,5,main]) started.
+:alt-a-partial-unique:classes (Thread[#139,Execution worker,5,main]) started.
+
+> Task :alt-a-partial-unique:classes
+Skipping task ':alt-a-partial-unique:classes' as it has no actions.
+Resolve mutations for :alt-a-partial-unique:compileTestJava (Thread[#139,Execution worker,5,main]) started.
+:alt-a-partial-unique:compileTestJava (Thread[#139,Execution worker,5,main]) started.
+
+> Task :alt-a-partial-unique:compileTestJava
+Custom actions are attached to task ':alt-a-partial-unique:compileTestJava'.
+Caching disabled for task ':alt-a-partial-unique:compileTestJava' because:
+  Build cache is disabled
+Task ':alt-a-partial-unique:compileTestJava' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':alt-a-partial-unique:compileTestJava'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.002 secs.
+Created classpath snapshot for incremental compilation in 0.077 secs.
+Resolve mutations for :alt-a-partial-unique:processTestResources (Thread[#139,Execution worker,5,main]) started.
+:alt-a-partial-unique:processTestResources (Thread[#139,Execution worker,5,main]) started.
+
+> Task :alt-a-partial-unique:processTestResources NO-SOURCE
+Skipping task ':alt-a-partial-unique:processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :alt-a-partial-unique:testClasses (Thread[#139,Execution worker,5,main]) started.
+:alt-a-partial-unique:testClasses (Thread[#146,Execution worker Thread 8,5,main]) started.
+
+> Task :alt-a-partial-unique:testClasses
+Skipping task ':alt-a-partial-unique:testClasses' as it has no actions.
+Resolve mutations for :alt-a-partial-unique:test (Thread[#146,Execution worker Thread 8,5,main]) started.
+:alt-a-partial-unique:test (Thread[#146,Execution worker Thread 8,5,main]) started.
+Gradle Test Executor 2 started executing tests.
+
+> Task :alt-a-partial-unique:test
+Caching disabled for task ':alt-a-partial-unique:test' because:
+  Build cache is disabled
+Task ':alt-a-partial-unique:test' is not up-to-date because:
+  No history is available.
+Starting process 'Gradle Test Executor 2'. Working directory: /Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique Command: /Users/idong-u/.gradle/jdks/eclipse_adoptium-25-aarch64-os_x.2/jdk-25.0.1+8/Contents/Home/bin/java -Dapi.version=1.43 -Dorg.gradle.internal.worker.tmpdir=/Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique/build/tmp/test/work @/Users/idong-u/.gradle/.tmp/gradle-worker-classpath8104569792189953336txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=KR -Duser.language=ko -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2'
+Successfully started process 'Gradle Test Executor 2'
+
+AltAConcurrencyTest STANDARD_OUT
+    23:44:41.303 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.dongwoo.alta.AltAConcurrencyTest]: AltAConcurrencyTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    23:44:41.377 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.dongwoo.alta.AltAApplication for test class com.dongwoo.alta.AltAConcurrencyTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+
+     :: Spring Boot ::                (v4.0.0)
+
+    2026-05-17T23:44:41.594+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] com.dongwoo.alta.AltAConcurrencyTest     : Starting AltAConcurrencyTest using Java 25.0.1 with PID 57219 (started by idong-u in /Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique)
+    2026-05-17T23:44:41.595+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] com.dongwoo.alta.AltAConcurrencyTest     : No active profile set, falling back to 1 default profile: "default"
+    2026-05-17T23:44:41.845+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-05-17T23:44:41.882+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+    2026-05-17T23:44:42.039+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+    2026-05-17T23:44:42.041+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+    2026-05-17T23:44:42.052+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 2.0.2
+    2026-05-17T23:44:42.237+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+    2026-05-17T23:44:42.528+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:///Users/idong-u/.docker/run/docker.sock
+    2026-05-17T23:44:42.529+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+    2026-05-17T23:44:42.558+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+      Server Version: 24.0.5
+      API Version: 1.43
+      Operating System: Docker Desktop
+      Total Memory: 7851 MB
+    2026-05-17T23:44:42.560+09:00  WARN 57219 --- [alt-a-partial-unique] [    Test worker] o.testcontainers.utility.ResourceReaper  : 
+    ********************************************************************************
+    Ryuk has been disabled. This can cause unexpected behavior in your environment.
+    ********************************************************************************
+    2026-05-17T23:44:42.561+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+    2026-05-17T23:44:42.561+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+    2026-05-17T23:44:42.574+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] tc.postgres:16                           : Creating container for image: postgres:16
+    2026-05-17T23:44:43.216+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] tc.postgres:16                           : Container postgres:16 is starting: ad4926aff8a469f629555193113947b263a12ab09c0cdfecfa1d2ad4bc0ee8c1
+    2026-05-17T23:44:45.366+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] tc.postgres:16                           : Container postgres:16 started in PT2.791299S
+    2026-05-17T23:44:45.366+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] tc.postgres:16                           : Container is started (JDBC URL: jdbc:postgresql://localhost:50492/test?loggerLevel=OFF)
+    2026-05-17T23:44:45.716+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:50492/test?loggerLevel=OFF (PostgreSQL 16.14)
+    2026-05-17T23:44:45.742+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+    2026-05-17T23:44:45.744+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.008s)
+    2026-05-17T23:44:45.758+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+    2026-05-17T23:44:45.831+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+    2026-05-17T23:44:45.844+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init"
+    2026-05-17T23:44:45.874+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.c.i.s.DefaultSqlScriptExecutor       : +--------+
+    | setval |
+    +--------+
+    | 1      |
+    +--------+
+
+    2026-05-17T23:44:45.875+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.c.i.s.DefaultSqlScriptExecutor       : +--------+
+    | setval |
+    +--------+
+    | 1      |
+    +--------+
+
+    2026-05-17T23:44:45.876+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.c.i.s.DefaultSqlScriptExecutor       : +--------+
+    | setval |
+    +--------+
+    | 1      |
+    +--------+
+
+    2026-05-17T23:44:45.894+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.036s)
+    2026-05-17T23:44:45.966+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-05-17T23:44:46.038+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+    2026-05-17T23:44:46.415+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2026-05-17T23:44:46.439+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2026-05-17T23:44:46.467+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22e650e
+    2026-05-17T23:44:46.467+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2026-05-17T23:44:46.517+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+    	Database JDBC URL [jdbc:postgresql://localhost:50492/test?loggerLevel=OFF]
+    	Database driver: PostgreSQL JDBC Driver
+    	Database dialect: PostgreSQLDialect
+    	Database version: 16.14
+    	Default catalog/schema: test/public
+    	Autocommit mode: undefined/unknown
+    	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+    	JDBC fetch size: none
+    	Pool: DatasourceConnectionProviderImpl
+    	Minimum pool size: undefined/unknown
+    	Maximum pool size: undefined/unknown
+    2026-05-17T23:44:47.045+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2026-05-17T23:44:47.046+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+    2026-05-17T23:44:47.078+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-05-17T23:44:47.123+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+    2026-05-17T23:44:47.242+09:00  INFO 57219 --- [alt-a-partial-unique] [    Test worker] com.dongwoo.alta.AltAConcurrencyTest     : Started AltAConcurrencyTest in 5.792 seconds (process running for 6.505)
+
+AltAConcurrencyTest > 좌석 100에 동시 100건 → partial UNIQUE 단독으로 1건만 HELD STANDARD_ERROR
+    Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+    WARNING: A Java agent has been loaded dynamically (/Users/idong-u/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+    WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+    WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+    WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+Gradle Test Executor 2 finished executing tests.
+2026-05-17T23:44:47.745+09:00  INFO 57219 --- [alt-a-partial-unique] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T23:44:47.747+09:00  INFO 57219 --- [alt-a-partial-unique] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-17T23:44:47.749+09:00  INFO 57219 --- [alt-a-partial-unique] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+> Task :alt-a-partial-unique:test
+
+AltAConcurrencyTest > 좌석 100에 동시 100건 → partial UNIQUE 단독으로 1건만 HELD STANDARD_OUT
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-95] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-96] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-65] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-76] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-65] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-36] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.625+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-36] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-72] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.625+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-72] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-95] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-96] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-60] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.625+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-60] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-77] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.625+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-77] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.625+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-76] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    2026-05-17T23:44:47.624+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-47] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+    2026-05-17T23:44:47.626+09:00  WARN 57219 --- [alt-a-partial-unique] [ool-2-thread-47] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "uq_reservation_seat_active"
+      Detail: Key (seat_id)=(100) already exists.
+    === ALT-A RESULT ===
+    success=1 rejected=99 DataIntegrityViolation=9 otherErrors=0 heldCount=1 elapsedMs=138
+Generating HTML test report...
+Finished generating test html results (0.077 secs) into: /Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique/build/reports/tests/test
+Finished generating test XML results (0.018 secs) into: /Users/idong-u/d/seat-lock-alternatives/alt-a-partial-unique/build/test-results/test
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/9.4.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/9.4.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/9.4.1/executionHistory/executionHistory.bin
+Invalidating in-memory cache of /Users/idong-u/d/seat-lock-alternatives/.gradle/buildOutputCleanup/outputFiles.bin
+
+[Incubating] Problems report is available at: file:///Users/idong-u/d/seat-lock-alternatives/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 14s
+4 actionable tasks: 4 executed
+Watched directory hierarchies: [/Users/idong-u/d/seat-lock-alternatives]
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.4.1/userguide/configuration_cache_enabling.html

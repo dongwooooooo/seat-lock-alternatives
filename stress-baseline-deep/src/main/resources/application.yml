@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: stress-baseline-deep
+  datasource:
+    hikari:
+      # 시나리오마다 필요한 풀 크기가 다름. 기본 30으로 두고 시나리오에서 동적 조절 가능.
+      # leak detection 5s — 7번 leak 시나리오에서 경고 감지 대상.
+      maximum-pool-size: 30
+      connection-timeout: 5000
+      leak-detection-threshold: 5000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc.batch_size: 50
+    # 전역 lock_timeout 미설정 — 시나리오별로 QueryHint 로 명시적 적용.
+    # 4번 시나리오(starvation)는 timeout 없이 직렬화 latency 측정 목적.
+    open-in-view: false
+    show-sql: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+logging:
+  level:
+    com.dongwoo.stressdeep: info
+    org.hibernate.SQL: warn
+    org.hibernate.orm.jdbc.bind: warn
+    com.zaxxer.hikari: info

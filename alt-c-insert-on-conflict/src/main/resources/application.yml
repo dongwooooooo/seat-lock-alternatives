@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: alt-c-insert-on-conflict
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc.batch_size: 50
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+logging:
+  level:
+    com.dongwoo.altc: info
+    org.hibernate.SQL: warn

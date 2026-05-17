@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: stress-baseline
+  datasource:
+    hikari:
+      # 의도적으로 낮음 — 50K 좌석 + 200K 동시 사용자 부하를 시뮬레이션.
+      # 실 운영도 단일 인스턴스 풀은 보통 20~50. 본 테스트는 10으로 한계를 빠르게 노출.
+      maximum-pool-size: 10
+      # 3초 후 connection acquisition 실패. 200K 사용자 환경에서는 자주 발생할 수치.
+      connection-timeout: 3000
+      leak-detection-threshold: 5000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc.batch_size: 50
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+logging:
+  level:
+    com.dongwoo.stressbaseline: info
+    org.hibernate.SQL: warn
+    com.zaxxer.hikari: warn
