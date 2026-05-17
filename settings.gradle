@@ -1,0 +1,9 @@
+rootProject.name = 'seat-lock-alternatives'
+
+include 'alt-a-partial-unique'
+include 'alt-b-optimistic-lock'
+include 'alt-c-insert-on-conflict'
+include 'alt-d-redis-setnx'
+include 'alt-e-skip-locked'
+include 'alt-f-single-writer-queue'
+include 'alt-z-baseline'
