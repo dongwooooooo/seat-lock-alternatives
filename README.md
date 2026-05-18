@@ -8,8 +8,9 @@
 ## 결론 요약
 
 - **6가지 대안 (A~F)** : 좌석당 정합성은 모두 달성되지만 각자 운영상 단점이 있다 → 기각.
-- **채택**: 비관적 락 + partial UNIQUE (2단 방어, alt-z = stress-baseline 모듈).
-- **그러나** Stage 2 베이스라인 단독으로는 50K 좌석 × 20만 동시 환경에서 풀 고갈·deadlock·lock timeout·starvation·connection leak 5종이 운영급 부하에서 재현됨 → **Stage 3 (대기열) 진입 정당화**.
+- **이전 채택**: 비관적 락 + partial UNIQUE (2단 방어, alt-z = stress-baseline 모듈).
+- **신규 채택**: **CAS (atomic UPDATE) + partial UNIQUE** — 동일 9 시나리오 실측 결과, hot seat p99 **-67%** + throughput **+183%**. race 정합성·운영 위험은 비관적 락 대비 동등 또는 우세. → [CAS-vs-PESSIMISTIC.md](CAS-vs-PESSIMISTIC.md) 참조.
+- **그러나** 단일 채택안 단독으로는 50K 좌석 × 20만 동시 환경에서 풀 고갈·deadlock·lock timeout·starvation·connection leak 5종이 운영급 부하에서 재현됨 → **Stage 3 (대기열) 진입 정당화**.
 
 ## 실험 시나리오 (대안 비교 공통)
 
@@ -34,9 +35,9 @@
 
 각 대안 디렉터리의 README에 동작 방식 / 장점 / 기각 사유 / 측정 결과 상세 포함.
 
-## 채택 베이스라인의 부하 한계 입증
+## 채택안 부하 한계 입증
 
-### stress-baseline (3 시나리오)
+### stress-baseline (이전 채택: 비관적 락, 3 시나리오)
 
 | 시나리오 | total | success | seatNotAvailable | connectionTimeout | p99 (ms) | throughput (ops/s) |
 |---|---|---|---|---|---|---|
@@ -44,20 +45,30 @@
 | Distributed 1000×2000 동시 | 2000 | 808 | 1192 | 0 | 1240 | 1385 |
 | Pool Exhaustion 500 동시 (pool=10) | 500 | 99 | 401 | 0 | 123 | 3268 |
 
+### stress-cas (신규 채택: CAS, 3 시나리오)
+
+| 시나리오 | total | success | seatNotAvailable | connectionTimeout | p99 (ms) | throughput (ops/s) |
+|---|---|---|---|---|---|---|
+| Hot Seat 1000 동시 | 1000 | 1 | 999 | 0 | **192** | **4219** |
+| Distributed 1000×2000 동시 | 2000 | 808 | 1192 | 0 | **782** | **2250** |
+| Pool Exhaustion 500 동시 (pool=10) | 500 | 99 | 401 | 0 | 106 | 3571 |
+
 - race 정합성은 모든 시나리오에서 유지 (heldCount = 1 for hot seat).
 - 그러나 p99 latency가 hot seat에서 586ms, distributed에서 1240ms — 사용자 1초+ 대기.
 - 풀 고갈은 단일 좌석 hold (외부 호출 없음) 시나리오에선 발생 안 함. 외부 결제 호출이 들어가면 deep-stress 시나리오 4번 (Starvation)에서 즉시 무너짐.
 
-### stress-baseline-deep (6 시나리오 추가 검증)
+### stress-baseline-deep / stress-cas-deep (6 운영 위험 시나리오, 두 채택안 비교)
 
-| # | 실패 모드 | 결과 | 영향 |
-|---|---|---|---|
-| 1 | JPA persistence-context staleness | PASS (race 차단됨) | 현재 `@Lock + @Query` 패턴 안전 |
-| 2 | Deadlock (다중 row + 잘못된 ordering) | **59/60 deadlock**, p99=12.5s | 좌석 묶음 예약 추가 시 즉시 발생 |
-| 3 | Lock wait timeout | **56/100 lockTimeout** @ 2초 거절 | 운영 적용 시 `SET LOCAL lock_timeout` 필수 |
-| 4 | Long-running tx starvation | p99=2068ms (1 thread만 2s sleep) | 외부 API in tx → hot seat 처리량 0.5 ops/sec |
-| 5 | Rollback storm | atomic 유지 (orphan=0) | 단일 노드 OK. 분산 시 outbox 필요 |
-| 6 | Connection leak | leak 30개 = pool 100% timeout | 단일 leak 경로로 인스턴스 영구 다운 |
+| # | 실패 모드 | 비관적 락 결과 | CAS 결과 | 비교 |
+|---|---|---|---|---|
+| 1 | JPA persistence-context staleness | PASS (race 차단, p99=91ms) | PASS (race 차단, p99=72ms) | CAS 약간 빠름 |
+| 2 | Deadlock (다중 row + 잘못된 ordering) | 59 deadlock / success=1, p99=12.5s | 36 deadlock / success=23, p99=7.3s | CAS deadlock ↓ (-39%), 단 lock-free 아님 |
+| 3 | Lock wait timeout | 56 lockTimeout / 14 connTimeout | 57 lockTimeout / 13 connTimeout | 동일 — row lock 보유 |
+| 4 | Long-running tx starvation | p99=2068ms (외부 호출 tx 안) | p99=2061ms | 동일 — tx 보유 시간이 본질 |
+| 5 | Rollback storm | atomic 유지 (orphan=0) | atomic 유지 (orphan=0) | 동일 |
+| 6 | Connection leak | leak 30 = pool 100% timeout | leak 30 = pool 100% timeout | 동일 — 코드 규율 |
+
+상세 비교: [CAS-vs-PESSIMISTIC.md](CAS-vs-PESSIMISTIC.md)
 
 ## Stage 3 진입 논리
 
@@ -85,6 +96,8 @@
 ./gradlew :alt-f-single-writer-queue:test
 ./gradlew :stress-baseline:test
 ./gradlew :stress-baseline-deep:test
+./gradlew :stress-cas:test
+./gradlew :stress-cas-deep:test
 ./gradlew test  # 전체
 ```
 

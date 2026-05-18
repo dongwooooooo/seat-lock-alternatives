@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: stress-cas
+  datasource:
+    hikari:
+      # stress-baseline 과 동일한 풀 크기 (10). 비교 조건 통일.
+      # CAS 는 락 보유 시간이 짧으므로 같은 풀에서 더 높은 throughput 기대.
+      maximum-pool-size: 10
+      connection-timeout: 3000
+      leak-detection-threshold: 5000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc.batch_size: 50
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+logging:
+  level:
+    com.dongwoo.stresscas: info
+    org.hibernate.SQL: warn
+    com.zaxxer.hikari: warn
