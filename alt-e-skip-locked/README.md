@@ -1,5 +1,11 @@
 # 대안 E — SELECT FOR UPDATE SKIP LOCKED
 
+## 사용자 행동 예시
+
+**시나리오 1 (본 도메인 — 부적합)**: 좌석 도면에서 사용자가 좌석 100번(맨 앞 정중앙)을 콕 찍어 클릭. 100명이 같은 좌석을 동시에 클릭한다. `seatRepository.findByIdSkipLocked(100L)` 가 `SELECT * FROM seat WHERE id=100 AND status='AVAILABLE' FOR UPDATE SKIP LOCKED` 를 보낸다 — 1건이 락을 잡으면 나머지 99건의 쿼리는 그 행을 건너뛰고 empty Optional 을 받는다. 사용자 1명은 "선점됨", 99명은 "매진" 응답을 받는다. 그러나 좌석은 winner 가 정상 처리 중이고 실제로 매진이 아니다 — 99건 false negative. 사용자 입장에서는 "방금까지 가용이라고 표시됐는데 갑자기 매진?" 으로 당황한다.
+
+**시나리오 2 (작업 큐 — 적합)**: "아무 가용 좌석 1개 달라" 요청 1000건이 좌석 100개에 임의로 분배. 락 잡힌 좌석을 건너뛰고 다른 좌석을 즉시 잡으므로 100 좌석 모두 서로 다른 사용자에게 정확히 1번씩 분배되며 doubleBooked=false, 좌석 소진 후 900건은 정상적인 매진 응답.
+
 ## 동작 방식
 
 PostgreSQL의 `SELECT ... FOR UPDATE SKIP LOCKED` 구문 사용.

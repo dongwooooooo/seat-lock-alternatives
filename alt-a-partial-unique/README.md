@@ -1,5 +1,9 @@
 # 대안 A — partial UNIQUE 인덱스 단독
 
+## 사용자 행동 예시
+
+BTS 콘서트 11:00:00 정각 오픈, 좌석 100번 클릭 버튼을 100명이 동시에 누른다. 100명 모두 `ReservationService.reserve(100, userId)` 에 도달 — 락이 없어 100건이 전부 트랜잭션을 열고 BEGIN → SELECT → UPDATE → INSERT 경로를 끝까지 탄다. DB가 마지막 INSERT 단계에서만 99건을 23505 unique violation 으로 거부한다. 1명은 "좌석 선점됨", 99명은 "이미 선점된 좌석입니다" 응답을 모두 ~138ms 안에 받지만 운영팀 모니터에는 PSQL 23505 에러가 99건 쌓이고 알람이 울린다.
+
 ## 동작 방식
 
 - `seat` row를 **잠그지 않고** 그냥 `findById`로 읽는다.

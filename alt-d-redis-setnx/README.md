@@ -3,6 +3,10 @@
 DB 외부(Redis)에서 좌석별 분산 락을 잡아 critical section을 직렬화한다.
 `@Lock` 도, partial UNIQUE 인덱스도 사용하지 않는다.
 
+## 사용자 행동 예시
+
+좌석 100번 클릭 버튼을 100명이 동시에 누른다. 100건이 `RedisDistributedLock.tryLock("seat:100", token, 5)` 로 진입 — Redis 가 `SET seat:100 {token} NX EX 5` 를 원자적으로 실행해 1건만 OK, 99건은 null 을 받고 즉시 `SeatNotAvailableException`. 99건은 DB 까지 도달하지 않으므로 커넥션 풀에 부담이 없다. 사용자 99명은 elapsed 267ms 안에 "좌석 선점 중" 응답을 받는다. 좌석 50번을 노린 다른 사용자는 별도 락 키이므로 영향 받지 않는다. 단, 락 잡은 사용자의 JVM 이 GC pause 로 5초 안에 DB write 를 못 끝내면 TTL 만료 후 새 소유자가 락을 잡아 이중 critical section 진입 가능 — token mismatch 로 이중 unlock 만 막힐 뿐 fencing 토큰 없이는 이중 HELD 위험이 남는다.
+
 ## 동작 방식
 
 1. 좌석마다 UUID token 생성.

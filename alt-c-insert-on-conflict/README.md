@@ -2,6 +2,10 @@
 
 좌석당 활성 reservation 1건 보장. partial UNIQUE index 위에 PostgreSQL `INSERT ... ON CONFLICT DO NOTHING` 단발 SQL 1회로 race를 끝낸다. `@Lock` 없음, JPA dirty-checking 없음, 예외 분기 없음.
 
+## 사용자 행동 예시
+
+좌석 100번 클릭 버튼을 100명이 동시에 누른다. `ReservationRepository.insertHeldIfNoConflict()` 가 native SQL `INSERT ... ON CONFLICT (seat_id) WHERE status IN ('HELD','PAID') DO NOTHING` 을 단발로 보낸다. PostgreSQL 이 INSERT 단계에서 partial UNIQUE index 충돌을 자체 처리하므로 99건은 예외 스택 트레이스 없이 affected=0 만 받는다. 사용자는 1명 "선점됨", 99명 "이미 선점됨" 응답을 elapsed 175ms 안에 받으며 운영 로그도 깨끗하다. 단, 같은 트랜잭션 안에서 방금 INSERT한 reservation 을 `findById` 로 다시 가져오면 EntityManager 1차 캐시 miss 로 DB 왕복 1회가 추가로 발생한다.
+
 ## 동작 방식 (native PG 구문)
 
 1. `INSERT INTO reservation (...) VALUES (...) ON CONFLICT (seat_id) WHERE status IN ('HELD','PAID') DO NOTHING`

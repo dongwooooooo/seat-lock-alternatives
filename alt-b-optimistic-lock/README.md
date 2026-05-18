@@ -1,5 +1,9 @@
 # 대안 B — 낙관적 락 (@Version)
 
+## 사용자 행동 예시
+
+좌석 100번 화면에서 100명이 동시에 "예매" 버튼을 클릭. 모두 같은 0.1초 안에 진입해 `seatRepository.findById(100)` 으로 version=0 인 엔티티를 동시에 읽는다. 100명이 동시에 `UPDATE seat SET status='HELD', version=1 WHERE id=100 AND version=0` 을 보낸다 — 1건만 affected=1, 99건은 `ObjectOptimisticLockingFailureException` 을 받고 retry 루프 진입. retry 도중 status=HELD 가 보여 빠르게 거절되므로 본 측정은 122ms 만에 끝나지만, hot 좌석 N개 시나리오에서는 wasted UPDATE 가 99*K 로 증폭되어 사용자 응답 지연이 노출된다.
+
 ## 동작 방식
 
 좌석 row에 `version BIGINT` 컬럼을 추가하고 JPA `@Version`을 붙인다.

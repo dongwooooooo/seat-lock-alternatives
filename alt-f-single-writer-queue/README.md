@@ -1,5 +1,9 @@
 # 대안 F — 단일 작성자 큐 (single-writer queue)
 
+## 사용자 행동 예시
+
+콘서트 좌석 1000개 화면에서 1000명이 서로 다른 좌석을 동시에 클릭(좌석 충돌 없음). 1000건이 `SingleWriterReservationQueue.submit()` 으로 `LinkedBlockingQueue` 에 적재되고, 단일 worker thread 가 1건씩 꺼내 `processSerially()` 로 좌석 hold + INSERT 를 직렬 처리. race 자체가 정의상 불가능하므로 success=1000 — 모든 사용자가 좌석을 받는다. 그러나 큐 앞쪽 사용자는 ~10ms, 큐 끝 사용자는 ~2초 기다린다 (p99 1979ms). 같은 조건에서 비관적 락 + UNIQUE 베이스라인은 throughput 1385 ops/sec, p99 1240ms 로 약 3배 빠르다. 좌석 1개 × 100 동시 경합 시에는 큐에 99건이 누적됐다가 1건만 통과(success=1, rejected=99) — race 차단은 정확히 작동.
+
 ## 동작 방식
 
 - 모든 예매 요청을 메모리 큐 (`LinkedBlockingQueue`) 에 적재
