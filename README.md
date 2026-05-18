@@ -2,6 +2,9 @@
 
 [ticketing](https://github.com/dongwooooooo/ticketing) §5 (좌석 동시 선점 차단) 의 **6가지 대안 + 채택 베이스라인 + 추가 부하 입증**을 실제 코드와 측정으로 검증한 레포.
 
+**전체 26 시나리오 통합 정리 (사용자 행동 형식)**: [Notion 부하 측정 시나리오 페이지](https://www.notion.so/36473344235881adbdf7d64842f9a539)
+**관련 레포**: [`ticketing`](https://github.com/dongwooooooo/ticketing) (메인) · [`queue-alternatives`](https://github.com/dongwooooooo/queue-alternatives) · [`ticketing-observability`](https://github.com/dongwooooooo/ticketing-observability) (k6+Grafana)
+
 ## 결론 요약
 
 - **6가지 대안 (A~F)** : 좌석당 정합성은 모두 달성되지만 각자 운영상 단점이 있다 → 기각.
